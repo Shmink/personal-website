@@ -1,0 +1,82 @@
+html {
+	font-family: 'Inconsolata', monospace;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+}
+
+body {
+	background-color: #252D33;
+}
+
+/*This is to be for the typed Tom Nicklin...*/
+#typie {
+	text-align: center;
+	margin: 2em auto;
+	font-weight: bold;
+	font-size: xx-large;
+	color: #394EBC;
+}
+
+#bio {
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	margin: 0 auto;
+}
+
+#picme {
+	justify-content: center;
+	width: 10em;
+	height: 10em;
+	border-radius: 5em;
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	margin: 2em
+}
+
+#bio #tangoed, #pgp #tangoed {
+	color: #EA8651;
+}
+
+#pgp {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	margin-top: 4em;
+	padding-right: 1em;
+	padding-left: 2em;
+	list-style-type: none;
+	color: #EA8651;
+}
+
+.contacts #contactimg {
+	width: 3em;
+	height: 3em;
+	margin: 1em;
+}
+
+/* Not working, need to fix */
+@media all and (max-width: 1024px){
+	#picme {
+		justify-content: center;
+		width: 10em;
+		height: 10em;
+		border-radius: 5em;
+		margin: 0 auto;
+		display: block;
+	}
+	#bio {
+		text-align: center;
+		justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+		display: initial;
+	}
+
+}
