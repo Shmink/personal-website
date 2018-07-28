@@ -1,1 +1,8 @@
-#
+# Trying to rebuild the docker image each time.
+
+required: sudo
+
+services: docker
+
+build: 
+    - docker build -t shmink-personal . 

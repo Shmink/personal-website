@@ -1,9 +1,24 @@
 FROM ubuntu
+MAINTAINER Tom Nicklin "t-nicklin@hotmail.co.uk"
 
 USER root
 RUN apt update && apt install nginx -y
-WORKDIR /var/www/html
-RUN rm *
-COPY . ~/Dropbox/mySite
+
+# Remove the default Nginx configuration file
+RUN rm -v /etc/nginx/nginx.conf
+
+# Copy a configuration file from the current directory
+ADD nginx.conf /etc/nginx/
+
+# Add local files to container directory
+ADD . /usr/share/nginx/html/
+ADD . /var/www/html/
+
+# Append "daemon off;" to the beginning of the configuration
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 EXPOSE 80
+
+# Set the default command to execute
+# when creating a new container
+CMD service nginx start
