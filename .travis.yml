@@ -2,7 +2,10 @@
 
 required: sudo
 
-services: docker
+# language: ruby
 
-build: 
-    - docker build -t shmink-personal . 
+services: 
+    - docker
+
+script:
+    - docker build -t shmink-personal .

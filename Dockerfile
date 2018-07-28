@@ -1,5 +1,4 @@
 FROM ubuntu
-MAINTAINER Tom Nicklin "t-nicklin@hotmail.co.uk"
 
 USER root
 RUN apt update && apt install nginx -y
