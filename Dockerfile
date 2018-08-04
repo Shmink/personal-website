@@ -10,8 +10,8 @@ RUN rm -v /etc/nginx/nginx.conf
 ADD nginx.conf /etc/nginx/
 
 # Add local files to container directory
-ADD . /usr/share/nginx/html/
-ADD . /var/www/html/
+COPY . /usr/share/nginx/html/
+COPY . /var/www/html/
 
 # Append "daemon off;" to the beginning of the configuration
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
