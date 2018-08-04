@@ -10,7 +10,8 @@ jobs:
       - run:
           name: Docker & AWS login
           command: |
-            aws ecr get-login --no-include-email --region eu-west-2 | bash
+            aws ecr get-login --no-include-email --region us-east-1 | bash
+            docker login --username=$DOCKER_USER --password=$DOCKER_PASS
 
       - run: 
           name: Build docker image
