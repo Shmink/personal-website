@@ -1,31 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 * {
   margin: 0;
-  /* padding: 0; */
-  /* box-sizing: border-box; */
   zoom: 1.2;
 }
 
-img{
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
--moz-box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
-box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+.title-img {
+	justify-content: center;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 5em;
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
 }
 
 .top-section{
   list-style: none;
-  display: inline-flex
-}
-
-.avatar{
-  /* justify-content: left; */
-	width: 1em;
-	height: 1em;
-	border-radius: 5em;
-	-webkit-border-radius: 5em;
-	-moz-border-radius: 5em;
-  /* list-style: none;
-  display: inline-flex; */
+  display: inline-flex;
+  padding: 0;
 }
 
 p{
@@ -97,7 +88,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .card-container .card h2 {
